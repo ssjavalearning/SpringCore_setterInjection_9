@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+	<!-- <bean id="car" class="com.suraj.spring.beans.Car">
+		<property name="color">
+			<value>blue</value>
+		</property>
+		<property name="engine">
+			<ref bean="engine" />
+		</property>
+	</bean>
+	<bean id="engine" class="com.suraj.spring.beans.Engine"></bean> -->
+	
+	<bean id="car" class="com.suraj.spring.beans.Car">
+		<property name="color" value="red" />
+		<property name="engine" ref="engine" />
+	</bean>
+	<bean id="engine" class="com.suraj.spring.beans.Engine" />
+</beans>
